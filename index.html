@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notcoin Airdrop</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+        }
+        .title {
+            font-size: 3em;
+            margin: 20px 0;
+        }
+        .subtitle {
+            font-size: 2em;
+            margin: 20px 0;
+        }
+        .description {
+            font-size: 1em;
+            margin: 10px 0;
+            color: #999;
+        }
+        .bonus {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        .bonus img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        .players {
+            font-size: 1em;
+            color: #ff5722;
+            margin-top: 10px;
+        }
+        .connect-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span>Whitepaper</span>
+            <span style="float: right;">&#x2716;</span>
+        </div>
+        <img src="logo.png" alt="Logo" class="logo">
+        <div class="title">Notcoin</div>
+        <div class="subtitle">Airdrop</div>
+        <div class="description">the biggest community eveeer</div>
+        <div class="bonus">
+            <img src="fire-icon.png" alt="Fire Icon">
+            <span>bonus tokens for holders</span>
+        </div>
+        <div class="players">35,197,397 total players</div>
+        <div>connect to claim</div>
+        <button class="connect-button" onclick="connectWallet()">🔗 Connect Wallet</button>
+    </div>
+
+    <script>
+        async function connectWallet() {
+            if (typeof window.ton === 'undefined') {
+                alert('TON Wallet not found. Please install it first.');
+                return;
+            }
+
+            try {
+                const wallet = await window.ton.send('ton_requestAccounts');
+                console.log('Wallet connected:', wallet);
+                alert('Wallet connected: ' + wallet);
+            } catch (error) {
+                console.error('Error connecting wallet:', error);
+                alert('Error connecting wallet: ' + error.message);
+            }
+        }
+    </script>
+</body>
+</html>
