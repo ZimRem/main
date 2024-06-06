@@ -1,0 +1,80 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.whitepaper-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.coin-image {
+    width: 100px;
+    height: auto;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 20px 0;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.bonus {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.players {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.connect-button {
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.connect-button:hover {
+    background-color: #1C86EE;
+}
