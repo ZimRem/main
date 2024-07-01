@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+    padding: 20px;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.whitepaper {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.image img {
+    width: 50px;
+    height: 50px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.subtitle {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.bonus {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.players {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.connect-wallet {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.connect-wallet:hover {
+    background-color: #0056b3;
+}
